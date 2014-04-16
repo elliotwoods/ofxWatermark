@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Add a watermark to your application. Since we reference an external image file, we check the 
+Add a watermark to your application which cannot be changed after you build the app. If the image file is changed, the app will fail to run (give a system alert and quit).
 
 ## License
 
