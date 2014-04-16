@@ -4,6 +4,8 @@
 
 ### h
 
+In your cpp file: 
+
 ```cpp
 #include "ofxWatermark.h"
 
@@ -22,7 +24,8 @@ testApp::draw() {
 }
 ```
 
-### cpp
+
+In your h file:
 
 ```cpp
 testApp::setup() {
