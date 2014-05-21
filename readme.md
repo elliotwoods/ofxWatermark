@@ -26,12 +26,12 @@ This hash is 128 bits long. It is extermely difficult for somebody to replace th
 In your cpp file: 
 
 ```cpp
-#include "ofxWatermark.h"
-
-class testApp : public ofApp {
+testApp::setup() {
 	...
+	
+	watermark.init("logo_white.png", "90c6b3efdead156592bf17985d0b6b58");
 
-	ofxWatermark watermark;
+	...
 }
 
 testApp::draw() {
@@ -47,20 +47,12 @@ testApp::draw() {
 In your h file:
 
 ```cpp
-testApp::setup() {
-	...
-	
-	watermark.init("logo_white.png", "90c6b3efdead156592bf17985d0b6b58");
+#include "ofxWatermark.h"
 
-	...
-}
-
-testApp::draw() {
+class testApp : public ofApp {
 	...
 
-	watermark.draw(); //draws in bottom right
-	// or
-	watermark.draw(10, 10); // watermark also inherits ofImage
+	ofxWatermark watermark;
 }
 ```
 
