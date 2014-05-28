@@ -2,9 +2,6 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-#if defined(OF_TARGET_OSX)
-    ofSetDataPathRoot("../Resources/");
-#endif
     watermark.init("fakelove_640.png", "e20ad30e46d45140cd459224eca59fcc", true);
     ofSetCircleResolution(60);
 }
