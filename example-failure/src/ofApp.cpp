@@ -1,8 +1,11 @@
 #include "ofApp.h"
-//cp -f "$ICON_FILE" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
+//add this to your 'Run script' in Target>Build Phases
+//cp -r ./bin/data/*.png "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources"
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetDataPathRoot("../Resources/");
+    //add this to your 'Run script' in Target>Build Phases
+    //cp -r ./bin/data/*.png "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources"
+//    ofSetDataPathRoot("../Resources/");
     watermark.init("logo.png", "7266b84987016ad01535b3962901a521");
 }
 
